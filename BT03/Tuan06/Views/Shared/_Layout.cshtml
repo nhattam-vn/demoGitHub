@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>@ViewData["Title"]</title>
+	<link href="~/user/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- Custom Theme files -->
+	<!--theme style-->
+	<link href="~/user/css/style.css" rel="stylesheet" asp-append-version="true" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+	<script src="~/user/js/jquery.min.js"></script>
+
+	<!--//theme style-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Wedding Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- start menu -->
+	<script src="~/user/js/simpleCart.min.js"> </script>
+	<!-- start menu -->
+	<link href="~/user/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+	<script type="text/javascript" src="~/user/js/memenu.js"></script>
+	<script>$(document).ready(function(){$(".memenu").memenu();});</script>
+</head>
+<body>
+	@* Partial View *@
+	@await Html.PartialAsync("_Header")
+	
+	<div role="main">@RenderBody()</div>
+
+    @* Partial View *@
+	@await Html.PartialAsync("_Footer")
+</body>
+</html>
